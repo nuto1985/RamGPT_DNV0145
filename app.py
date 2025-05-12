@@ -38,7 +38,7 @@ def homepage():
     <body>
     <header>
         <div class="container">
-            <img src="{0}" alt="Ramboll Logo">
+            <img src="{}" alt="Ramboll Logo">
             <h1>DNV 0145 Requirements</h1>
         </div>
     </header>
@@ -60,7 +60,7 @@ def show_section(section_id):
     with open('requirements.json') as f:
         data = json.load(f)
 
-    section = data['DNV0145']['chapters'][0] if section_id == "10" else None
+    section = data['DNV0145']['chapters'][0]  # Since we only have Section 10
     logo_path = os.path.join('static', 'ramboll_logo.png')
     html_content = """
     <html><head>
