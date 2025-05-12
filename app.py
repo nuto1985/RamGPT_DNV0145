@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string
+from flask import Flask, render_template_string, url_for
 import json
 import os
 
@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def homepage():
-    logo_path = os.path.join('static', 'ramboll_logo.png')
+    logo_path = url_for('static', filename='ramboll_logo.png')
     html_content = """
     <html>
     <head>
@@ -52,6 +52,7 @@ def homepage():
     """.format(logo_path)
     return render_template_string(html_content)
 
+
 @app.route('/section/<section_id>')
 def show_section(section_id):
     if section_id != "10":
@@ -60,8 +61,9 @@ def show_section(section_id):
     with open('requirements.json') as f:
         data = json.load(f)
 
-    section = data['DNV0145']['chapters'][0]  # Since we only have Section 10
-    logo_path = os.path.join('static', 'ramboll_logo.png')
+    section = data['DNV0145']['chapters'][0]  # Only Section 10 for now
+    logo_path = url_for('static', filename='ramboll_logo.png')
+    
     html_content = """
     <html><head>
     <title>{}</title>
@@ -101,7 +103,7 @@ def show_section(section_id):
     for subchapter in section['subchapters']:
         subchapter_id = subchapter['subchapterTitle'].replace(' ', '_')
         html_content += '<div class="subchapter-title" onclick="toggleContent(\'{}\')">{}</div>'.format(subchapter_id, subchapter['subchapterTitle'])
-        html_content += '<div class="content" id="{}">'.format(subchapter_id)
+        html_content += '<div class="content" id="{}" style="display:none;">'.format(subchapter_id)
         if 'content' in subchapter:
             html_content += '<p>{}</p>'.format(subchapter['content'])
         if 'requirements' in subchapter:
@@ -112,7 +114,7 @@ def show_section(section_id):
         html_content += '</div>'
     
     html_content += '<div class="title" onclick="toggleContent(\'checklist\')">Checklist</div>'
-    html_content += '<div class="content" id="checklist"><h3>Checklist:</h3><ul>'
+    html_content += '<div class="content" id="checklist" style="display:none;"><h3>Checklist:</h3><ul>'
     for item in section['checklist']:
         html_content += '<li>{}</li>'.format(item)
     html_content += '</ul></div>'
@@ -120,6 +122,7 @@ def show_section(section_id):
     html_content += '</body></html>'
 
     return render_template_string(html_content)
+
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
