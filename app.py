@@ -60,7 +60,7 @@ def show_section(section_id):
     with open('requirements.json') as f:
         data = json.load(f)
 
-    section = data['DNV0145']['chapters'][0]  # Since we only have Section 10
+    section = data['DNV0145']['chapters'][0] if section_id == "10" else None
     logo_path = os.path.join('static', 'ramboll_logo.png')
     html_content = """
     <html><head>
@@ -96,7 +96,7 @@ def show_section(section_id):
     </header>
     <div class="container">
     <h1>{}</h1>
-    """.format(logo_path, section['chapterTitle'])
+    """.format(section['chapterTitle'], logo_path, section['chapterTitle'])
 
     for subchapter in section['subchapters']:
         subchapter_id = subchapter['subchapterTitle'].replace(' ', '_')
