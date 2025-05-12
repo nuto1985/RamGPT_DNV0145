@@ -1,0 +1,16 @@
+Chapter 1: General Requirements
+1.1 Scope
+    - Principles, requirements and guidance for the construction phase of the project.
+    - Construction phase includes manufacturing, load-out, transport, installation and commissioning; de-commissioning.
+    - Important information related to construction includes Sec.3 Arrangement principles and Sec.8 Access and transfer.
+
+Chapter 10: Safety concept and design principles
+10.2.1 General
+    - Outline a realistic project programme with adequate time for planning and execution.
+    - Early identify and reduce risks.
+    - Minimise work required offshore by completing work onshore including partial commissioning and testing.
+    - Facilitate co-operation between parties involved in construction.
+10.2.2 Safety criteria and evaluation
+    - Evaluate the design regarding its suitability to meet performance criteria.
+    - Minimise exposure of persons to risks by reducing offshore construction and commissioning times.
+# Add more chapters and sections as needed.

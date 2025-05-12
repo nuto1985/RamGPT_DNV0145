@@ -1,0 +1,49 @@
+{
+  "DNV0145": {
+    "chapters": [
+      {
+        "chapterTitle": "Section 10 Construction",
+        "subchapters": [
+          {
+            "subchapterTitle": "10.1 Introduction",
+            "requirements": [
+              "Principles, requirements and guidance for the construction phase of the project.",
+              "Construction phase includes manufacturing, load-out, transport, installation and commissioning; de-commissioning.",
+              "Important information related to construction includes Sec.3 Arrangement principles and Sec.8 Access and transfer."
+            ],
+            "checklist": [
+              "Consider principles and requirements at the design stage.",
+              "Address sections Sec.3 Arrangement principles and Sec.8 Access and transfer."
+            ]
+          },
+          {
+            "subchapterTitle": "10.2 Safety concept and design principles",
+            "requirements": [
+              "Outline a realistic project programme with adequate time for planning and execution.",
+              "Early identify and reduce risks.",
+              "Minimise work required offshore by completing work onshore including partial commissioning and testing.",
+              "Facilitate co-operation between parties involved in construction."
+            ],
+            "checklist": [
+              "Adopt a risk-based construction design.",
+              "Consider safety, environmental consequences, and total life cycle costs."
+            ]
+          },
+          {
+            "subchapterTitle": "10.3 Manufacturing and commissioning",
+            "requirements": [
+              "Consider activities required for fabrication and construction onshore as well as load-out and transportation.",
+              "Onshore fabrication and construction shall comply with DNV-OS-C401 Fabrication and testing of offshore structures.",
+              "Steel materials and products shall be delivered with inspection documents as defined in EN 10204 or equivalent standard."
+            ],
+            "checklist": [
+              "Ensure compliance with European and International standards for structural safety.",
+              "Increase material certificate level for secondary structures important for the safety of personnel."
+            ]
+          }
+          // Add more subchapters as needed.
+        ]
+      }
+    ]
+  }
+}
