@@ -6,15 +6,7 @@
         "subchapters": [
           {
             "subchapterTitle": "10.1 Introduction",
-            "requirements": [
-              "Principles, requirements and guidance for the construction phase of the project which shall be considered and addressed at the design stage.",
-              "Construction phase includes manufacturing, load-out, transport, installation and commissioning; de-commissioning shall also be taken into consideration.",
-              "Important information related to construction includes: Sec.3 Arrangement principles and Sec.8 Access and transfer."
-            ],
-            "checklist": [
-              "Consider principles and requirements at the design stage.",
-              "Address sections Sec.3 Arrangement principles and Sec.8 Access and transfer."
-            ]
+            "content": "This section provides principles, requirements and guidance for the construction phase of the project which shall be considered and addressed at the design stage. The construction phase includes manufacturing, load-out, transport, installation and commissioning; de-commissioning shall also be taken into consideration. Sections of this standard containing important information related to construction include: Sec.3 Arrangement principles and Sec.8 Access and transfer."
           },
           {
             "subchapterTitle": "10.2 Safety concept and design principles",
@@ -22,38 +14,80 @@
               "Outline a realistic project programme with adequate time for planning and execution.",
               "Early identify and reduce risks.",
               "Minimise work required offshore by completing work onshore including partial commissioning and testing.",
-              "Facilitate co-operation between parties involved in construction."
-            ],
-            "checklist": [
-              "Adopt a risk-based construction design.",
-              "Consider safety, environmental consequences, and total life cycle costs."
+              "Facilitate co-operation between parties involved in construction.",
+              "Adopt a risk-based construction design considering safety, environmental consequences, and total life cycle costs.",
+              "Evaluate the design regarding its suitability to meet performance criteria, including lost time injuries."
             ]
           },
           {
             "subchapterTitle": "10.3 Manufacturing and commissioning",
             "requirements": [
-              "Consider activities required for fabrication and construction onshore as well as load-out and transportation.",
-              "Onshore fabrication and construction shall comply with DNV-OS-C401 Fabrication and testing of offshore structures.",
-              "Steel materials and products shall be delivered with inspection documents as defined in EN 10204 or equivalent standard."
-            ],
-            "checklist": [
-              "Ensure compliance with European and International standards for structural safety.",
-              "Increase material certificate level for secondary structures important for the safety of personnel."
+              "Consider all activities required for fabrication and construction onshore as well as load-out and transportation.",
+              "Comply with DNV-OS-C401 Fabrication and testing of offshore structures unless otherwise agreed.",
+              "Deliver steel materials and products with inspection documents as defined in EN 10204 or equivalent standard.",
+              "Increase material certificate level for secondary structures important for the safety of personnel.",
+              "Ensure major components included in the substation auxiliary power system are tested as prescribed by applicable IEC standards.",
+              "Document all performed construction yard acceptance tests and commissioning activities."
             ]
           },
           {
             "subchapterTitle": "10.3.2 Systems and equipment",
             "requirements": [
-              "General requirements on manufacturing and the qualification of manufacturers are defined in this section and in DNV-SE-0073 and DNV-SE-0190.",
-              "Testing and commissioning of the substation electrical system is usually performed in three stages: factory acceptance tests, harbour acceptance tests, site acceptance tests."
-            ],
-            "checklist": [
-              "Ensure all major components included in the substation auxiliary power system are tested as prescribed by applicable IEC standards.",
-              "Document all performed construction yard acceptance tests and commissioning activities."
+              "Define general requirements on manufacturing and the qualification of manufacturers in DNV-SE-0073 and DNV-SE-0190.",
+              "Perform testing and commissioning of the substation electrical system in three stages: factory acceptance tests, harbour acceptance tests, site acceptance tests.",
+              "Perform factory acceptance tests to check conformity with specifications and functional requirements, including major substation power equipment such as transformers and switchgears.",
+              "Carry out harbour acceptance tests on systems or modules after assembly and installation at the construction yard, including extensive checks on auxiliary power systems.",
+              "Conduct site acceptance tests to ensure proper installation and interface of systems upon offshore installation.",
+              "Verify tightness of electrical connections and proper functional operation before main power energization offshore."
+            ]
+          },
+          {
+            "subchapterTitle": "10.4 Transport and installation",
+            "requirements": [
+              "Cover planning principles, risk evaluation, and documentation for transport and installation operations.",
+              "Include operational prerequisites such as design criteria, weather forecast, organization, method statements, operation manuals, preparation, and testing.",
+              "Document acceptable characteristics for handled objects, equipment, temporary or permanent structures, vessels, etc.",
+              "Perform load analysis taking into account dynamic effects, nonlinear effects, permanent loads, live loads, deformation loads, environmental loads, and accidental loads.",
+              "Define environmental loads and load cases, on-bottom stability requirements, and requirements for structural strength.",
+              "Consider operational aspects for ballasting, pile installation, and grouting.",
+              "Follow guidance and recommendations for lifting operations in DNV-ST-N001 and ensure compliance with International Regulations for Prevention of Collision at Sea (COLREG).",
+              "Ensure subsea cable pull-in and connection are considered in the design phase, including support of cable during installation and operation."
+            ]
+          },
+          {
+            "subchapterTitle": "10.5 As-built documentation",
+            "requirements": [
+              "Include quality records, material test certificates, approval documents, construction procedures, method statements, and construction log.",
+              "Document inspection records, description of non-conformities, and as-built drawings.",
+              "Ensure as-built drawings contain the same level of detail as the approved design drawings."
             ]
           }
+        ],
+        "checklist": [
+          "Outline project programme with adequate time for planning and execution.",
+          "Early identification and reduction of risks.",
+          "Minimize offshore work by maximizing onshore commissioning and testing.",
+          "Facilitate cooperation between construction parties.",
+          "Adopt risk-based design considering safety, environmental consequences, and life cycle costs.",
+          "Evaluate design to meet performance criteria.",
+          "Comply with DNV-OS-C401 for onshore fabrication and construction.",
+          "Deliver steel and products with EN 10204 inspection documents.",
+          "Increase material certificate level for important secondary structures.",
+          "Test major substation components as per IEC standards.",
+          "Document construction yard acceptance tests and commissioning.",
+          "Follow guidelines for manufacturing and equipment qualification.",
+          "Execute factory, harbour, and site acceptance tests.",
+          "Verify electrical connections and perform functional checks before offshore energization.",
+          "Include comprehensive planning and documentation for transport and installation.",
+          "Document characteristics and perform load analysis for transport elements.",
+          "Consider operational aspects for ballasting, pile installation, and grouting.",
+          "Adhere to DNV-ST-N001 for lifting operations and COLREG for navigational compliance.",
+          "Document as-built construction quality, inspection records, and non-conformities.",
+          "Prepare detailed as-built drawings."
         ]
       }
     ]
+  }
+}
   }
 }
