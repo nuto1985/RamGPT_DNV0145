@@ -1,5 +1,4 @@
-from flask import Flask
-from flask import render_template_string
+from flask import Flask, render_template_string
 import json
 
 app = Flask(__name__)
@@ -17,13 +16,17 @@ def generate_html(data):
         html += f"<h1>{chapter['chapterTitle']}</h1>"
         for subchapter in chapter['subchapters']:
             html += f"<h2>{subchapter['subchapterTitle']}</h2>"
-            html += "<h3>Requirements:</h3><ul>"
-            for req in subchapter['requirements']:
-                html += f"<li>{req}</li>"
-            html += "</ul><h3>Checklist:</h3><ul>"
-            for item in subchapter['checklist']:
-                html += f"<li>{item}</li>"
-            html += "</ul>"
+            if 'content' in subchapter:
+                html += f"<p>{subchapter['content']}</p>"
+            if 'requirements' in subchapter:
+                html += "<h3>Requirements:</h3><ul>"
+                for req in subchapter['requirements']:
+                    html += f"<li>{req}</li>"
+                html += "</ul>"
+        html += "<h3>Checklist:</h3><ul>"
+        for item in chapter['checklist']:
+            html += f"<li>{item}</li>"
+        html += "</ul>"
     html += "</body></html>"
     return html
 
