@@ -12,27 +12,27 @@ def homepage():
     <head>
     <title>DNV 0145 Requirements</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0; }
-        .container { width: 80%; margin: auto; overflow: hidden; }
-        header { background: #fff; color: #333; padding: 10px 0; border-bottom: #333 solid 1px; }
-        header img { width: 150px; float: left; }
-        header h1 { text-align: right; float: right; margin: 0; padding-top: 15px; padding-right: 15px; }
-        .section { font-size: 1.5em; margin: 1em; color: #0066cc; }
-        .content { padding: 10px; background-color: #fff; border: 1px solid #ddd; margin-bottom: 1em; }
-        .subchapter-title { cursor: pointer; color: #0066cc; text-decoration: underline; }
-        h1 { color: #333; }
-        h3 { color: #0066cc; }
-        ul { list-style-type: square; margin-left: 20px; }
+        body {{ font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0; }}
+        .container {{ width: 80%; margin: auto; overflow: hidden; }}
+        header {{ background: #fff; color: #333; padding: 10px 0; border-bottom: #333 solid 1px; }}
+        header img {{ width: 150px; float: left; }}
+        header h1 {{ text-align: right; float: right; margin: 0; padding-top: 15px; padding-right: 15px; }}
+        .section {{ font-size: 1.5em; margin: 1em; color: #0066cc; }}
+        .content {{ padding: 10px; background-color: #fff; border: 1px solid #ddd; margin-bottom: 1em; }}
+        .subchapter-title {{ cursor: pointer; color: #0066cc; text-decoration: underline; }}
+        h1 {{ color: #333; }}
+        h3 {{ color: #0066cc; }}
+        ul {{ list-style-type: square; margin-left: 20px; }}
     </style>
     <script>
-        function toggleContent(contentId) {
+        function toggleContent(contentId) {{
             var content = document.getElementById(contentId);
-            if (content.style.display === 'none') {
+            if (content.style.display === 'none') {{
                 content.style.display = 'block';
-            } else {
+            }} else {{
                 content.style.display = 'none';
-            }
-        }
+            }}
+        }}
     </script>
     </head>
     <body>
