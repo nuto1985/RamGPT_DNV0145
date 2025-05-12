@@ -10,12 +10,12 @@ def homepage():
     <title>DNV 0145 Requirements</title>
     <style>
         .section { font-size: 1.5em; margin: 1em 0; }
-        .subchapter-content { display: none; padding-left: 2em; }
-        .subchapter-title { cursor: pointer; color: blue; text-decoration: underline; }
+        .content { display: none; padding-left: 2em; }
+        .title { cursor: pointer; color: blue; text-decoration: underline; }
     </style>
     <script>
-        function toggleSubchapter(sectionId) {
-            var content = document.getElementById(sectionId);
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
             if (content.style.display === 'none') {
                 content.style.display = 'block';
             } else {
@@ -44,12 +44,12 @@ def show_section(section_id):
     <html><head>
     <title>{}</title>
     <style>
-        .subchapter-content {{ display: none; padding-left: 2em; }}
-        .subchapter-title {{ cursor: pointer; color: blue; text-decoration: underline; }}
+        .content {{ display: none; padding-left: 2em; }}
+        .title {{ cursor: pointer; color: blue; text-decoration: underline; }}
     </style>
     <script>
-        function toggleSubchapter(subchapterId) {{
-            var content = document.getElementById(subchapterId);
+        function toggleContent(contentId) {{
+            var content = document.getElementById(contentId);
             if (content.style.display === 'none') {{
                 content.style.display = 'block';
             }} else {{
@@ -63,8 +63,8 @@ def show_section(section_id):
 
     for subchapter in section['subchapters']:
         subchapter_id = subchapter['subchapterTitle'].replace(' ', '_')
-        html_content += '<div class="subchapter-title" onclick="toggleSubchapter(\'{}\')">{}</div>'.format(subchapter_id, subchapter['subchapterTitle'])
-        html_content += '<div class="subchapter-content" id="{}">'.format(subchapter_id)
+        html_content += '<div class="title" onclick="toggleContent(\'{}\')">{}</div>'.format(subchapter_id, subchapter['subchapterTitle'])
+        html_content += '<div class="content" id="{}">'.format(subchapter_id)
         if 'content' in subchapter:
             html_content += '<p>{}</p>'.format(subchapter['content'])
         if 'requirements' in subchapter:
@@ -74,10 +74,13 @@ def show_section(section_id):
             html_content += '</ul>'
         html_content += '</div>'
     
-    html_content += '<h3>Checklist:</h3><ul>'
+    html_content += '<div class="title" onclick="toggleContent(\'checklist\')">Checklist</div>'
+    html_content += '<div class="content" id="checklist"><h3>Checklist:</h3><ul>'
     for item in section['checklist']:
         html_content += '<li>{}</li>'.format(item)
-    html_content += '</ul></body></html>'
+    html_content += '</ul></div>'
+    
+    html_content += '</body></html>'
 
     return render_template_string(html_content)
 
