@@ -7,9 +7,9 @@
           {
             "subchapterTitle": "10.1 Introduction",
             "requirements": [
-              "Principles, requirements and guidance for the construction phase of the project.",
-              "Construction phase includes manufacturing, load-out, transport, installation and commissioning; de-commissioning.",
-              "Important information related to construction includes Sec.3 Arrangement principles and Sec.8 Access and transfer."
+              "Principles, requirements and guidance for the construction phase of the project which shall be considered and addressed at the design stage.",
+              "Construction phase includes manufacturing, load-out, transport, installation and commissioning; de-commissioning shall also be taken into consideration.",
+              "Important information related to construction includes: Sec.3 Arrangement principles and Sec.8 Access and transfer."
             ],
             "checklist": [
               "Consider principles and requirements at the design stage.",
@@ -40,10 +40,22 @@
               "Ensure compliance with European and International standards for structural safety.",
               "Increase material certificate level for secondary structures important for the safety of personnel."
             ]
+          },
+          {
+            "subchapterTitle": "10.3.2 Systems and equipment",
+            "requirements": [
+              "General requirements on manufacturing and the qualification of manufacturers are defined in this section and in DNV-SE-0073 and DNV-SE-0190.",
+              "Testing and commissioning of the substation electrical system is usually performed in three stages: factory acceptance tests, harbour acceptance tests, site acceptance tests."
+            ],
+            "checklist": [
+              "Ensure all major components included in the substation auxiliary power system are tested as prescribed by applicable IEC standards.",
+              "Document all performed construction yard acceptance tests and commissioning activities."
+            ]
           }
           // Add more subchapters as needed.
         ]
       }
+      // Add more chapters as needed.
     ]
   }
 }
