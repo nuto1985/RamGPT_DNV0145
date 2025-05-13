@@ -1,12 +1,8 @@
-from flask import Flask, render_template_string, request, jsonify, url_for
+from flask import Flask, render_template_string, url_for
 import json
 import os
-import openai
 
 app = Flask(__name__)
-
-# Set your OpenAI API key here
-openai.api_key = 'your_openai_api_key'
 
 @app.route('/')
 def homepage():
@@ -33,34 +29,16 @@ def homepage():
         h1 { color: #333; }
         h3 { color: #0066cc; }
         ul { list-style-type: square; margin-left: 20px; }
-        .chat-container { margin-top: 20px; }
     </style>
     <script>
-        function toggleContent(contentId) {{
+        function toggleContent(contentId) {
             var content = document.getElementById(contentId);
-            if (content.style.display === 'none') {{
+            if (content.style.display === 'none') {
                 content.style.display = 'block';
-            }} else {{
+            } else {
                 content.style.display = 'none';
-            }}
-        }}
-
-        function sendMessage() {{
-            var userMessage = document.getElementById('userInput').value;
-            fetch('/chat', {{
-                method: 'POST',
-                headers: {{
-                    'Content-Type': 'application/json'
-                }},
-                body: JSON.stringify({{message: userMessage}})
-            }})
-            .then(response => response.json())
-            .then(data => {{
-                var chatBox = document.getElementById('chatBox');
-                chatBox.innerHTML += '<b>You:</b> ' + userMessage + '<br><b>Bot:</b> ' + data.reply + '<br><br>';
-                document.getElementById('userInput').value = '';
-            }});
-        }}
+            }
+        }
     </script>
     </head>
     <body>
@@ -81,12 +59,6 @@ def homepage():
         html_content += '<div class="section"><a href="{}">{}</a></div>'.format(section["link"], section["title"])
 
     html_content += """
-        <div class="chat-container">
-            <h3>Chat with Rambly</h3>
-            <div id="chatBox" style="border: 1px solid #ddd; padding: 10px; height: 200px; overflow-y: auto;"></div>
-            <input type="text" id="userInput" placeholder="Type your message here" style="width: 80%;">
-            <button onclick="sendMessage()">Send</button>
-        </div>
     </div>
     </body></html>
     """
@@ -158,17 +130,6 @@ def show_section(section_id):
     html_content += '</ul></div>'
     html_content += '</body></html>'
     return render_template_string(html_content)
-
-@app.route('/chat', methods=['POST'])
-def chat():
-    user_message = request.json['message']
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=user_message,
-        max_tokens=150
-    )
-    reply = response.choices[0].text.strip()
-    return jsonify({'reply': reply})
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
