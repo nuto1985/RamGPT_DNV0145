@@ -2,6 +2,46 @@
   "DNV0145": {
     "chapters": [
       {
+        "chapterTitle": "Section 1 General",
+        "subchapters": [
+          {
+            "subchapterTitle": "1.1 Introduction",
+            "content": "Introduction to general requirements."
+          },
+          {
+            "subchapterTitle": "1.2 Scope",
+            "requirements": [
+              "Requirement 1 for scope.",
+              "Requirement 2 for scope."
+            ]
+          }
+        ],
+        "checklist": [
+          "Checklist item 1 for Section 1.",
+          "Checklist item 2 for Section 1."
+        ]
+      },
+      {
+        "chapterTitle": "Section 2 Formal Safety Assessment",
+        "subchapters": [
+          {
+            "subchapterTitle": "2.1 Introduction",
+            "content": "Introduction to formal safety assessment."
+          },
+          {
+            "subchapterTitle": "2.2 Safety Concept",
+            "requirements": [
+              "Requirement 1 for safety concept.",
+              "Requirement 2 for safety concept."
+            ]
+          }
+        ],
+        "checklist": [
+          "Checklist item 1 for Section 2.",
+          "Checklist item 2 for Section 2."
+        ]
+      },
+      {
         "chapterTitle": "Section 10 Construction",
         "subchapters": [
           {
@@ -25,9 +65,7 @@
               "Consider all activities required for fabrication and construction onshore as well as load-out and transportation.",
               "Comply with DNV-OS-C401 Fabrication and testing of offshore structures unless otherwise agreed.",
               "Deliver steel materials and products with inspection documents as defined in EN 10204 or equivalent standard.",
-              "Increase material certificate level for secondary structures important for the safety of personnel.",
-              "Ensure major components included in the substation auxiliary power system are tested as prescribed by applicable IEC standards.",
-              "Document all performed construction yard acceptance tests and commissioning activities."
+              "Increase material certificate level for secondary structures important for the safety of personnel."
             ]
           },
           {
@@ -88,4 +126,5 @@
       }
     ]
   }
+}
 }
