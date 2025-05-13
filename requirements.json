@@ -6,19 +6,38 @@
         "subchapters": [
           {
             "subchapterTitle": "1.1 Introduction",
-            "content": "Introduction to general requirements."
+            "content": "This section provides general information on the purpose, scope, and applicability of the standard."
           },
           {
             "subchapterTitle": "1.2 Scope",
             "requirements": [
-              "Requirement 1 for scope.",
-              "Requirement 2 for scope."
+              "The standard applies to the design, construction, installation, and operation of offshore substations.",
+              "It covers both fixed and floating installations.",
+              "The standard is intended for worldwide application and may include additional local requirements."
+            ]
+          },
+          {
+            "subchapterTitle": "1.3 Application",
+            "requirements": [
+              "Apply the principles, requirements, and guidance throughout all stages of the lifecycle of the installation.",
+              "Ensure compliance with applicable local legislation and standards.",
+              "Consider alternative solutions that provide the same or a higher level of safety and reliability."
+            ]
+          },
+          {
+            "subchapterTitle": "1.4 References",
+            "requirements": [
+              "Reference normative documents such as DNV-OS-B101, DNV-OS-C101, DNV-OS-C401, DNV-ST-C502, DNV-ST-0126, and DNV-ST-0437.",
+              "Utilize informative documents for supplementary guidance and information."
             ]
           }
         ],
         "checklist": [
-          "Checklist item 1 for Section 1.",
-          "Checklist item 2 for Section 1."
+          "Ensure understanding of the purpose, scope, and applicability of the standard.",
+          "Verify application of the principles, requirements, and guidance throughout all lifecycle stages.",
+          "Ensure compliance with local legislation and standards.",
+          "Consider alternative solutions for safety and reliability.",
+          "Reference normative documents and utilize informative documents as needed."
         ]
       },
       {
@@ -26,19 +45,41 @@
         "subchapters": [
           {
             "subchapterTitle": "2.1 Introduction",
-            "content": "Introduction to formal safety assessment."
+            "content": "This section provides general information on safety assessment, hazard identification, and risk management."
           },
           {
-            "subchapterTitle": "2.2 Safety Concept",
+            "subchapterTitle": "2.2 Safety Objective",
             "requirements": [
-              "Requirement 1 for safety concept.",
-              "Requirement 2 for safety concept."
+              "Establish and implement an overall safety objective covering all phases from conceptual development to decommissioning.",
+              "Quantify the safety objective using key figures such as individual risk of death and group fatality risk.",
+              "Compare risks to similar activities or make them as low as reasonably practicable (ALARP)."
+            ]
+          },
+          {
+            "subchapterTitle": "2.3 Hazard Identification",
+            "requirements": [
+              "Identify hazards associated with the design, construction, installation, and operation of offshore substations.",
+              "Evaluate the consequences of hazards and implement measures to mitigate risks.",
+              "Consider environmental, operational, and accidental loads."
+            ]
+          },
+          {
+            "subchapterTitle": "2.4 Risk Management",
+            "requirements": [
+              "Develop a systematic process for managing risks associated with offshore substations.",
+              "Use probabilistic methods for planning inspections and managing fatigue cracks.",
+              "Implement corrective actions and monitor the effectiveness of risk management measures."
             ]
           }
         ],
         "checklist": [
-          "Checklist item 1 for Section 2.",
-          "Checklist item 2 for Section 2."
+          "Establish and implement overall safety objectives.",
+          "Quantify safety objectives with key figures.",
+          "Identify hazards associated with all lifecycle stages.",
+          "Evaluate consequences and implement risk mitigation measures.",
+          "Develop a systematic risk management process.",
+          "Use probabilistic methods for inspection planning and fatigue management.",
+          "Implement corrective actions and monitor effectiveness."
         ]
       },
       {
